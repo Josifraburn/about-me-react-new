@@ -7,13 +7,13 @@ class HomeContainer extends Component {
         return(
             <div className='home-main'>
                 <div className='home-content'>
-                    <Link to='/bio'>
+                    <Link to='/bio' className='link'>
                        BIO
                     </Link>
-                    <Link to='/projects'>
+                    <Link to='/projects' className='link'>
                        PROJECTS
                     </Link>
-                    <Link to='/resume'>
+                    <Link to='/resume' className='link'>
                        RESUME
                     </Link>
                 </div>

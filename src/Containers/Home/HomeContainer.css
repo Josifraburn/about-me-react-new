@@ -12,4 +12,13 @@ video{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 75px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:visited {
+    color: black;
 }
