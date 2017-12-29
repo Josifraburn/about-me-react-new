@@ -4,7 +4,7 @@ class BioContainer extends Component {
     render() {
         return(
             <div>
-                Hello world from bio
+                <div></div>
             </div>
         )
     }

@@ -1,24 +1,66 @@
 .home-main {
     width: 100%;
     height: 100vh;
+    background-color: red;
+    opacity: .5;
+    position: fixed;
+    z-index: 2;
 }
-video{
+/* video{
     width: 100%;
     height: 100vh;
-}
+    z-index: -1;
+    position: relative;
+} */
 
 .home-content {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 75px;
+    z-index: 999999;
 }
 
 .link {
     text-decoration: none;
+    position: relative;
+    z-index: 1;
+    color: black;
 }
 
+.link:hover {
+    color: blue;
+}
+
+.link:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: red;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+}
+
+.link:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    transition: all .7s;
+    transition-timing-function: ease-in-out;
+  }
+
+
 .link:visited {
-    color: black;
+    color: none;
 }
