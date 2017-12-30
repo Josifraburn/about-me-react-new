@@ -19,9 +19,9 @@ class HomeContainer extends Component {
                         RESUME
                         </Link>
                     </div>
-                    {/* <video autoPlay muted loop id='myVideo'>
+                    <video autoPlay muted loop id='myVideo'>
                         <source src='OtherFiles/myvid.mp4' />
-                    </video> */}
+                    </video>
             </div>
         )
     }
