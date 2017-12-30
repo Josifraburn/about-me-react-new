@@ -8,6 +8,10 @@ class HomeContainer extends Component {
             <div>
                 <div className='home-main'>
                 </div>
+                     <video autoPlay muted loop id='myVideo'>
+                        <source src='OtherFiles/myvid.mp4' />
+                    </video>
+
                     <div className='home-content'>
                         <Link to='/bio' className='link'>
                         BIO
@@ -19,9 +23,6 @@ class HomeContainer extends Component {
                         RESUME
                         </Link>
                     </div>
-                    <video autoPlay muted loop id='myVideo'>
-                        <source src='OtherFiles/myvid.mp4' />
-                    </video>
             </div>
         )
     }
