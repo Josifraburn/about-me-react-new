@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import HomeContainer from '../Containers/Home/HomeContainer'
-import BioContainer from '../Containers/BioContainer'
+import BioContainer from '../Containers/Bio/BioContainer'
 import ProjectsContainer from '../Containers/ProjectsContainer'
 import ResumeContainer from'../Containers/ResumeContainer'
 

@@ -1,0 +1,34 @@
+.bio-main {
+    display: grid;
+    grid-template-rows: 75px 250px 250px 250px;
+    grid-template-areas: 
+    'nav'
+    'first'
+    'second'
+    'third';
+}
+
+.name {
+    grid-area: first;
+}
+
+.bio-content {
+    grid-area: third;
+}
+
+.bio-link {
+    grid-area: nav;
+    text-decoration: none;
+    color: rgb(31, 30, 30);
+    margin: 20px;
+    font-size: 25px;
+}
+
+.bio-link:visited {
+    color: rgb(31, 30, 30);
+}
+
+.bio-nav {
+    justify-self: center;
+    align-self: center;
+}
