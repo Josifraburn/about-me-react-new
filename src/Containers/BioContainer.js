@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import Nav from '../Components/Nav';
 
 class BioContainer extends Component {
     render() {
         return(
-            <div>
+            <div className='bio-name'>
                 <div>
-                    Hello from bio
+                    <Nav />
                 </div>
             </div>
         )
