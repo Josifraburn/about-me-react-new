@@ -28,14 +28,14 @@
 }
 
 .bio-name {
-    grid-area: first;
     font-size: 100px;
     margin-left: 20px;
 }
 
 .bio-image {
     height: 100vh;
-    width: 50vw;
+    width: 50%;
+    margin: 0;
 }
 
 .name-content {
@@ -49,14 +49,35 @@
 }
 
 .bio-link {
-    grid-area: nav;
+    position: relative;
+    color: #000;
     text-decoration: none;
-    color: rgb(31, 30, 30);
-    margin: 20px;
     font-size: 25px;
+    margin: 15px;
 }
 
-.bio-link:visited {
-    color: rgb(31, 30, 30);
+.bio-link:hover {
+    color: #000;
 }
 
+.bio-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.bio-link:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+  

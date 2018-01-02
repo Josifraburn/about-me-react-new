@@ -28,9 +28,12 @@ class BioContainer extends Component {
                                 <h1 className='bio-name'>
                                     Josif Raburn
                                 </h1>
-                                <p className='bio-content'>
-                                Yo this is stuff about me so listen to it because I am cool guy!
-                                </p>
+                                <h2 className='bio-content'>
+                                I AM A 20 SOMETHING WEB DEVELOPER/DESIGNER<br />
+                                I HAVE A BEAUTIFUL WIFE AND 2 COOL DOGS<br />
+                                I LOVE VIDEO GAMES, MOVIES, AND LONG WALKS ON THE BEACH<br />
+
+                                </h2>
                             </div>
                         </div>
                     </div> 

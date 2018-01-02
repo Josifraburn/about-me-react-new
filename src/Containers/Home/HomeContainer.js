@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 class HomeContainer extends Component {
     render() {
         return(
-            <div>
+            <div className='home-container'>
                 <div className='home-main'>
                 </div>
                      <video autoPlay muted loop id='myVideo'>
