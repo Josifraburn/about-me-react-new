@@ -20,6 +20,7 @@
 .bio-nav {
     display: flex;
     justify-content: center;
+    animation: bio-animation 1s;
 }
 
 .bio-main-stuff {
@@ -36,6 +37,7 @@
     height: 100vh;
     width: 50%;
     margin: 0;
+    animation: bio-animation 1s
 }
 
 .name-content {
@@ -80,4 +82,18 @@
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
-  
+
+.bioImageHidden {
+    display: none;
+}
+
+.bioNavHidden {
+    display: none;
+}
+
+
+
+@keyframes bio-animation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
