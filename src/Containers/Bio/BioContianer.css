@@ -15,12 +15,13 @@
 
 .bio-layout {
     display: flex;
+    animation: bio-animation .5s    
 }
 
 .bio-nav {
     display: flex;
     justify-content: center;
-    animation: bio-animation 1s;
+    /* animation: bio-animation 1s; */
 }
 
 .bio-main-stuff {
@@ -37,7 +38,7 @@
     height: 100vh;
     width: 50%;
     margin: 0;
-    animation: bio-animation 1s
+    /* animation: bio-animation 1s */
 }
 
 .name-content {
@@ -91,7 +92,9 @@
     display: none;
 }
 
-
+.bioLayoutHidden {
+    display: none;
+}
 
 @keyframes bio-animation {
     from { opacity: 0; }

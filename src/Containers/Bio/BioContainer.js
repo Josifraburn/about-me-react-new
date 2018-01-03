@@ -6,6 +6,7 @@ class BioContainer extends Component {
     state = {
         bioImage: 'bioImageHidden',
         bioNav: 'bioNavHidden',
+        bioLayout: 'bioLayoutHidden',
     }
 
 
@@ -15,8 +16,9 @@ class BioContainer extends Component {
                 this.setState ({
                     bioImage: 'bio-image',
                     bioNav: 'bio-nav',
+                    bioLayout: 'bio-layout',
                 })
-            }.bind(this), 3000
+            }.bind(this), 500
         )
     }
 
@@ -25,7 +27,7 @@ class BioContainer extends Component {
             <div className='bio-container'>
                 <div className='bio-background'>
                 </div>
-                <div className='bio-layout'>
+                <div className={this.state.bioLayout}>
                     <img src='OtherFiles/josifimage.jpg' className={this.state.bioImage} /> 
                     <div className='bio-left'>   
                         <div className={this.state.bioNav}>
