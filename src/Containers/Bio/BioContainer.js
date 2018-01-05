@@ -22,6 +22,7 @@ class BioContainer extends Component {
         )
     }
 
+
     render() {
         return(
             <div className='bio-container'>

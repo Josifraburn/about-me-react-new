@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { string } from 'prop-types';
+import '../ProjectsSkeleton.css'
 
 
 class ProjectsSkeleton extends Component {
@@ -11,7 +12,7 @@ class ProjectsSkeleton extends Component {
     render() {
         return(
             <div>
-                <h1>
+                <h1 className='project-skeleton'>
                     {this.props.projectName}
                 </h1>
                 <p>

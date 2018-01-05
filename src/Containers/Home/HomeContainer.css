@@ -2,6 +2,7 @@
     height: 100vh;
     width: 100vw;
     margin: 0;
+    animation: home-animation 1s;
 }
 
 .home-main {
@@ -13,8 +14,8 @@
     width: 100vw;
 }
 video{
-    width: 100%;
-    height: 100vh;
+    min-width: 100%;
+    min-height: 100vh;
     z-index: -1;
     position: absolute;
 }
@@ -47,4 +48,14 @@ video{
     font-size: 100px;
     background-color: indianred;
     opacity: .9;
+}
+
+.homeContainerHidden {
+    display: none;
+}
+
+
+@keyframes home-animation {
+    from {opacity: 0}
+    to{opacity: 1}
 }
