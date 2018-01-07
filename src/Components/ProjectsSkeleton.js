@@ -17,6 +17,7 @@ class ProjectsSkeleton extends Component {
                 </h1>
                 <p>
                     {this.props.info}
+                    
                 </p>
             </div>
         )
