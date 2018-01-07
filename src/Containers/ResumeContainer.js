@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './ResumeContainer.css'
 import '../styles/ResumeNav.css'
+import Jobs from '../Components/Jobs'
 
 class ResumeContainer extends Component {
     render() {
@@ -26,6 +27,7 @@ class ResumeContainer extends Component {
                     <h1 className='resume-title'>
                         RESUME
                     </h1>
+                    <Jobs jobTitle='Web Developer' yearDate='2017-PRESENT' />
                     </div>
                 </div>    
                 </div>
