@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './ResumeContainer.css'
+import '../styles/ResumeNav.css'
 
 class ResumeContainer extends Component {
     render() {
