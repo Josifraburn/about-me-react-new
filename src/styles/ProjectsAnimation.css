@@ -1,9 +1,9 @@
 .projects-main {
-    animation: projects-animation .5s; 
+    animation: projects-animation 1s; 
 }
 
 .projects-nav {
-    animation: projects-animation.5s;
+    animation: projects-animation 1s;
 }
 
 .projectsMainHidden {
