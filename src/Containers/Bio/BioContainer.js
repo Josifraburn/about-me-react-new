@@ -12,13 +12,13 @@ class BioContainer extends Component {
 
     componentWillMount() {
         setTimeout(
-            function() {
+            () => {
                 this.setState ({
                     bioImage: 'bio-image',
                     bioNav: 'bio-nav',
                     bioLayout: 'bio-layout',
                 })
-            }.bind(this), 500
+            }, 500
         )
     }
 

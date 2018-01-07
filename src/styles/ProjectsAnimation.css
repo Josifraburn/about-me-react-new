@@ -1,0 +1,20 @@
+.projects-main {
+    animation: projects-animation .5s; 
+}
+
+.projects-nav {
+    animation: projects-animation.5s;
+}
+
+.projectsMainHidden {
+    display: none;
+}
+
+.projectsNavHidden {
+    display: none;
+}
+
+@keyframes projects-animation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
