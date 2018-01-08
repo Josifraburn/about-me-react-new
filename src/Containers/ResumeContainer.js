@@ -3,15 +3,31 @@ import { Link } from 'react-router-dom'
 import './ResumeContainer.css'
 import '../styles/ResumeNav.css'
 import Jobs from '../Components/Jobs'
+import Education from '../Components/Education'
 
 class ResumeContainer extends Component {
+    state = {
+        resumeNav: 'resumeNavHidden',
+        resumeContent: 'resumeContentHidden',
+    }
+
+    componentWillMount() {
+        setTimeout(
+            () => {
+                this.setState ({
+                    resumeNav: 'resume-nav',
+                    resumeContent: 'resume-content'
+                })
+            }, 500
+        )
+    }
     render() {
         return(
             <div className='resume-main'>
                 <div>
                 <div className='resume-background'>
                 </div>
-                <div className='resume-nav'>
+                <div className={this.state.resumeNav}>
                     <Link to='/' className='resume-link'>
                         HOME
                     </Link>
@@ -22,13 +38,13 @@ class ResumeContainer extends Component {
                         PROJECTS
                     </Link>
                 </div>
-                <div className='resume-content'>
+                <div className={this.state.resumeContent}>
                     <div className='title-box'>
                         <h1 className='resume-title'>
                             RESUME
                         </h1>
                         <h1 className='title1'>
-                            RELEVANT WORK EXPERIANCE:
+                            RELEVANT WORK EXPERIENCE:
                         </h1>
                         <div className='jobs'>
                             <Jobs  jobTitle='Web Developer' yearDate='2017-PRESENT' jobDescription='Freelance Web Developer who helps clients move their name into the digital age.' />
@@ -42,6 +58,14 @@ class ResumeContainer extends Component {
                         <h1 className='title1'>
                             Education:
                         </h1>
+                        <div className='education'>
+                            <div className='school1'>
+                                <Education schoolName='MATC' schoolYearDate='2014-2016' schoolDescription='Received a trade degree in digital arts'/>
+                            </div>
+                            <div className='school2'>
+                                <Education schoolName='HelioTraining' schoolYearDate='2016-2017' schoolDescription='Studied in Web development. Mastering front end development.' />
+                            </div>
+                        </div>
                     </div>
                 </div>    
                 </div>

@@ -6,6 +6,7 @@
 .resume-nav {
     display: flex;
     justify-content: center;
+    animation: resume-animation 1s;    
 }
 
 .resume-link {
@@ -35,6 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: resume-animation 1s;     
 }
 
 .resume-background {
@@ -53,4 +55,23 @@
     z-index:-1; 
     padding: 10px;
     box-shadow: 0px 3px 30px 1px rgba(0,0,0,0.75);    
+}
+
+.education {
+    display: flex;
+    justify-content: center;
+}
+
+
+.resumeNavHidden {
+    display: none;
+}
+
+.resumeContentHidden {
+    display: none;
+}
+
+@keyframes resume-animation {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
