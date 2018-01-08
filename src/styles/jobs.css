@@ -1,3 +1,12 @@
 .job-header {
     display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    font-weight: bold;  
+    font-size: 18px;  
+}
+
+.job-description {
+    display: flex;
+    justify-content: center;
 }

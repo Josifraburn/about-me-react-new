@@ -4,6 +4,7 @@ import '../styles/jobs.css'
 
 class Jobs extends Component {
     static propTypes = {
+        companyName: string.isRequired,
         jobTitle: string.isRequired,
         yearDate: string.isRequired,
         jobDescription: string.isRequired,
@@ -14,15 +15,18 @@ class Jobs extends Component {
             <div>
                 <div className='job-header'>
                     <h2>
+                        {this.props.companyName}
                         {this.props.jobTitle}
                     </h2>
                     <h3>
                         {this.props.yearDate}
                     </h3>
                 </div>
-                <p>
-                    {this.props.jobDescription}
-                </p>
+                <div className='job-description'>
+                    <p>
+                        {this.props.jobDescription}
+                    </p>
+                </div>
             </div>
         )
     }
